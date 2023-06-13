@@ -38,6 +38,12 @@ db.serialize(() => {
 });
 
 router.get("/salas", (req, res) => {
+  res.status(200).json({
+    message: "App is running...",
+  });
+});
+
+router.get("/salas", (req, res) => {
   let sql = `SELECT * FROM salas`;
   db.all(sql, [], (err, rows) => {
     if (err) {
