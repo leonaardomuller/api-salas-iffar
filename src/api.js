@@ -1,9 +1,10 @@
+const path = require("path");
 const express = require("express");
 const serverless = require("serverless-http");
 const sqlite3 = require("sqlite3").verbose();
 const swaggerUi = require("swagger-ui-express");
 const YAML = require("yamljs");
-const swaggerDocument = YAML.load("./swagger.yaml");
+const swaggerDocument = YAML.load(path.join(__dirname, "../../swagger.yaml"));
 const cors = require("cors");
 
 const app = express();
@@ -37,7 +38,7 @@ db.serialize(() => {
   );
 });
 
-router.get("/salas", (req, res) => {
+router.get("/", (req, res) => {
   res.status(200).json({
     message: "App is running...",
   });
