@@ -12,6 +12,7 @@ Esta API foi desenvolvida para auxiliar um aplicativo front-end em React Native.
 ## Como Rodar a API Localmente
 
 1 - Instale Node.js e npm (normalmente vem com o Node.js)
+
 2 - Clone este repositório:
 
 ```bash
