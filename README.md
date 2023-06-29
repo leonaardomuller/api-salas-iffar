@@ -15,13 +15,13 @@ Esta API foi desenvolvida para auxiliar um aplicativo front-end em React Native.
 2 - Clone este repositório:
 
 ```bash
-git clone https://github.com/leonaardomuller/qr-api.git
+git clone https://github.com/leonaardomuller/api-salas-iffar.git
 ```
 
 3 - Navegue até a pasta do repositório clonado e instale as dependências do projeto:
 
 ```bash
-cd qr-api
+cd api-salas-iffar
 npm install
 ```
 
